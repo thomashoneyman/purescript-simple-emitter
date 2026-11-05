@@ -1,0 +1,25 @@
+package:
+  name: simple-emitter
+  build:
+    strict: true
+  publish:
+    version: 3.0.2
+    license: MIT
+    location:
+      githubOwner: oreshinya
+      githubRepo: purescript-simple-emitter
+  dependencies:
+    - effect: ">=4.0.0 <5.0.0"
+    - foldable-traversable: ">=6.0.0 <7.0.0"
+    - maybe: ">=6.0.0 <7.0.0"
+    - ordered-collections: ">=3.0.0 <4.0.0"
+    - prelude: ">=6.0.1 <7.0.0"
+    - refs: ">=6.0.0 <7.0.0"
+  test:
+    main: Test.Main
+    strict: true
+    dependencies:
+      - console: ">=6.0.0 <7.0.0"
+workspace:
+  buildOpts:
+    censorLibraryWarnings: all
